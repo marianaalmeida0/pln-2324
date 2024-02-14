@@ -34,4 +34,6 @@ for token in tokens:
     else:
         anagramas[token_ordenado].append(token)
 
-print(anagramas)
+for key, valores in anagramas.items():
+    if len(valores) > 1:
+        print(f" {key}: {valores}")
