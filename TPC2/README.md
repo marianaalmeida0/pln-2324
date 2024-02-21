@@ -1,6 +1,6 @@
 # TPC2
 
-No ficheiro FICHA_RE_1.ipynb, encontra-se a resolução do TPC2 propostos nesta Unidade Curricular.
+No ficheiro FICHA_RE_1.ipynb, encontra-se a resolução do TPC2 proposto nesta Unidade Curricular.
 
 A ficha permitiu consolidar obtidos na aula prática correspondente, relativos às Expressões Regulares. Em Pyhton, para além dos conceitos básicos, foi necessário importar o módulo "re" para a utilização dos métodos "match","search", "findall", "sub" e "split".
 
