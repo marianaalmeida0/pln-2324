@@ -2,17 +2,15 @@ import re
 f=open("dicionario_medico.txt",'r',encoding='utf-8')
 texto=f.read()
 
-# data clenaing
-texto=re.sub(r"/f",'',texto)
+ #solucao para o FF
+texto=re.sub(r"(\f|\n\f)", "",texto) #remove as quebras de página ou as ocorrências de nova linha seguidas por quebra de página do texto.
 
 #marcar designacoes
 texto=re.sub(r"\n\n(.+)",r"\n\n@\1",texto)
 texto=re.sub(r"@(.+)\n\n@",r"@\1\n",texto)
 
- #solucao para o FF
-
 termos=[]
-termos = re.findall(r'@(.+)\n([^@]+)',texto)
+termos= re.findall(r"@(.+)\n([^@]+)\n\n", texto)  # encontra as designacões e as descricoes
 #print(termos)
 
 # Gerar HTML
