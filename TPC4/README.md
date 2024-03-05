@@ -6,7 +6,7 @@ Este projeto tinha como objetivo criar uma página HTML sobre os meus hobbies. U
 
 1. **Inserção de um vídeo:** Enfrentei dificuldades ao tentar colocar um vídeo na página HTML. Tentei incluir um elemento de vídeo, mas não consegui fazê-lo funcionar corretamente.
    
-2. **Formatação de Imagens Diferentes:** Inicialmente, as imagens selecionadas diferentes, o que causavam problemas de formatação na página. Tentei ajustar o tamanho das imagens para que todas aparecessem de forma consistente, mas encontrei dificuldades nesse processo. No final, optei por colocar as imagens todas do mesmo tamanho.
+2. **Formatação de Imagens Diferentes:** Inicialmente, as imagens selecionadas diferentes, o que causava problemas de formatação na página. Tentei ajustar o tamanho das imagens para que todas aparecessem de forma consistente, mas encontrei dificuldades nesse processo. No final, optei por colocar as imagens todas do mesmo tamanho.
 
 ## Destaques:
 
