@@ -10,7 +10,8 @@ Este projeto tinha como objetivo criar uma página HTML sobre os meus hobbies. U
 
 ## Destaques:
 
-Destaca-se a colocação de imagens para representar cada um dos meus hobbies, utilizando a tag `<img>` e o atributo `src` para especificar o caminho das imagens. Além disso, destaca-se ainda a utilização das tags de âncora `<a>` com o atributo `href` para criar links para páginas externas.
+Destaca-se a colocação de imagens para representar cada um dos meus hobbies, utilizando a tag `<img>` e o atributo `src` para especificar o caminho das imagens. Além disso, destaca-se ainda a utilização das tags de âncora `<a>` com o atributo `href` para criar links para páginas externas. Adicionalmente, foi aplicada sombra na caixa dos hobbies para criar um efeito visual agradável e ainda a transformação das imagens quando o cursor do rato está sobre elas, criando um efeito de elevação.
+
 
 ## Screenshoot da Página Desenvolvida
 
