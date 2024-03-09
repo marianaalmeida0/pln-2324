@@ -17,5 +17,5 @@ Implementou-se, também, uma tentativa de funcionalidade de menu de navegação 
 ## Screenshoot da Página Desenvolvida
 
 Abaixo, encontram-se screenshoots da página desenvolvida:
-![alt text](image.png)
-![alt text](image-1.png)
+![alt text](imagens/image.png)
+![alt text](imagens/image-1.png)
