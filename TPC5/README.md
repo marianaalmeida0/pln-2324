@@ -29,11 +29,11 @@ Uma das principais dificuldades encontradas foi lidar com os casos em que nem to
 A seguir estão presentes algumas imagens do resultado final:
 
 1. **Exemplo do Livro Médico:**  
-   ![alt text](screenshoots\image.png)
+   ![alt text](screenshoots/image.png)
    *Legenda:* Screenshoot com a descrição em português e a tradução em inglês ao passar o mouse sobre um termo no livro médico.
 
 2. **Dicionário de Tradução Gerado:**  
-   ![alt text](<screenshoots\Captura de ecrã 2024-03-12 184306.png>)
+   ![alt text](<screenshoots/Captura de ecrã 2024-03-12 184306.png>)
    *Legenda:* Screenshoot do dicionário de tradução gerado, com a associação entre os conceitos em português e as respetivas traduções em inglês.
 
 Com estas imagens, é possível visualizar o processo realizado e os resultados obtidos ao inserir as traduções e as descrições ao livro médico.
