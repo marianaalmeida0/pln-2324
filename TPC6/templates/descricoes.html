@@ -1,0 +1,26 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<style>
+    #design_en:not(:target) {
+        display: none;
+    }
+</style>
+<div class="card text-center">
+    <div class="card-header">
+        Dicionário
+    </div>
+    <div class="card-body">
+        <h5 class="card-title"><b>Descrição</b></h5>
+        <p class="card-text">{{ conceito["desc"] }}</p>
+        <p id="design_en">{{ conceito["en"] }}</p>
+        <a href="#design_en" type="button" class="btn btn-primary">English</a>
+        <button type="button" class="btn btn-primary" disabled data-bs-toggle="button">Spanish</button>
+        <button type="button" class="btn btn-primary" disabled data-bs-toggle="button">French</button>
+    </div>
+</div>
+<div class="m-5 ">
+<a href="/conceitos" type="button" class="btn btn-primary">Back</a>
+</div>
+{% endblock %}
