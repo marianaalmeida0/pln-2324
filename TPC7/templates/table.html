@@ -1,0 +1,24 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<table id="myTable" class="table">
+    <thead>
+        <tr>
+            <th>Conceito (PT)</th>
+            <th>Descrição</th>
+            <th>Conceito (EN)</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for conceito, info in conceitos.items() %}
+        <tr>
+            <td>{{ conceito }}</td>
+            <td>{{ info.desc }}</td>
+            <td>{{ info.en }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+{% endblock %}

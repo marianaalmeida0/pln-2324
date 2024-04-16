@@ -1,0 +1,56 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<section class="intro">
+    <div class="bg-image h-100" style="
+            background-image: url(https://mdbootstrap.com/img/Photos/new-templates/search-box/img7.jpg);
+          ">
+      <div class="mask d-flex align-items-center h-100" style="background-color: rgba(115, 171, 211, 0.5);">
+        <div class="container">
+          <p class="h2 mb-4 text-dark">Pesquise, aqui, uma palavra que deseja encontrar.</p>
+          <div class="card">
+            <div class="card-body p-4">
+              <form action="/pesquisa" method="GET">
+                <div class="input-group">
+                  <input type="search" name="palavra" id="form1" class="form-control form-control-lg" placeholder="Digite uma palavra" aria-label="Digite uma palavra" aria-describedby="button-addon">
+                  <button type="submit" class="btn btn-primary" id="button-addon">
+                    <i class="fas fa-search"></i>
+                  </button>
+                </div>
+                <div class="form-helper pt-2"><span class="font-weight-bold">Sugerido:</span> 
+                  <a href="?palavra=abacteriano" class="text-black-50">abacteriano,</a>  
+                  <a href="?palavra=abafamento" class="text-black-50">abafamento,</a>  
+                  <a href="?palavra=abalo" class="text-black-50">abalo,</a>  
+                  <a href="?palavra=acolia" class="text-black-50">acolia,</a>  
+                </div>
+              </form>
+              {% if resultados %}
+                <div class="row mt-4">
+                  <div class="col-12">
+                    <h3>Resultados para "{{ palavra }}"</h3>
+                    <ul class="list-group">
+                      {% for resultado in resultados %}
+                        <li class="list-group-item">
+                          <strong>Conceito:</strong> {{ resultado.conceito }}<br>
+                          <strong>Descrição:</strong> {{ resultado.descricao }}<br>
+                        </li>
+                      {% endfor %}
+                    </ul>
+                  </div>
+                </div>
+              {% elif palavra %}
+                <div class="row mt-4">
+                  <div class="col-12">
+                    <p class="mt-3">Nenhum resultado encontrado para "{{ palavra }}".</p>
+                  </div>
+                </div>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+{% endblock %}

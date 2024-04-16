@@ -1,0 +1,39 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<div class="text-center">
+    <h3><b>Adicionar Novo Conceito</b></h3>
+</div>
+
+
+<form action="/conceitos" method="POST">
+    <div class="form-group">
+      <label for="InputConceito"><b>Conceito:</b></label>
+      <input type="text" class="form-control" id="InputConceito" name="conceito">
+    </div>
+    <div class="form-group">
+        <label for="InputDescricao"><b>Descrição:</b></label>
+        <input type="text" class="form-control" id="InputConceito" name="descricao">
+      </div>
+    <div class="form-group mb-2">
+        <label for="InputDesignacaoEN"><b>Tradução EN:</b></label>
+        <input type="text" class="form-control" id="InputConceito" name="conceitEN">
+      </div>
+   
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+<hr>
+
+
+<div class="text-center">
+    <h3><b>Conceitos Médicos</b></h3>
+</div>
+
+<div class="list-group mt-4">
+    {% for conceito in conceitos %}
+
+    <a href="/conceitos/{{conceito}}" class="list-group-item list-group-item-action list-group-item-info">{{conceito}}</a>
+    
+    {% endfor %}
+</div>
+{% endblock %}
